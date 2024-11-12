@@ -65,6 +65,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- FOR IE9 below -->
@@ -84,6 +86,31 @@
 		if (nhagai) {
 			document.title = "Wedding Kieu Diem - Ngoc Bao";
 		} 
+
+// 		document.addEventListener("DOMContentLoaded", function() {
+//     const element = document.querySelector(".fh5co-cover");
+//     // Update CSS properties when HTML has loaded
+//     element.style.backgroundPosition = "0px 0px";
+
+
+// });
+
+window.onload = function() {
+	if (typeof Stellar !== 'undefined') {
+            // Initialize Stellar.js
+            Stellar.init({
+                horizontalScrolling: false, // Disable horizontal scrolling (optional)
+                verticalScrolling: true,     // Enable vertical scrolling
+                responsive: true,            // Enable responsiveness (optional)
+                parallaxBackgrounds: true,  // Enable parallax effect on backgrounds
+                parallaxElements: true,     // Enable parallax effect on elements
+            });
+
+            console.log('Stellar.js initialized!');
+        } else {
+            console.log('Stellar.js not loaded');
+        }
+};
 	</script>
 </head>
 
@@ -128,8 +155,8 @@
 			</div>
 		</nav>
 
-		<header id="fh5co-header" class="fh5co-cover d-none d-md-block" role="banner"
-			style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+		<header id="fh5co-header" class="fh5co-cover" role="banner"
+			style="" >
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -138,25 +165,6 @@
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1>Ngọc Bảo &amp; Diễm Kiều</h1>
 								<h2>chúng mình cưới</h2>
-								<div class="simply-countdown simply-countdown-one"></div>
-								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<header id="fh5co-header" class="fh5co-cover d-block d-md-none" role="banner"
-			style="background-image:url(images/img_bg_2_mb.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="display-t">
-							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>Ngọc Bảo &amp; Diễm Kiều</h1>
-								<h2>We Are Getting Married</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
 								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 							</div>
@@ -724,9 +732,8 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- countTo -->
 	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
+	
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
