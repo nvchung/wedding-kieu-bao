@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SacramentoUni';          /* Choose a name for the font */
+  src: url('../fonts/Sacramento.ttf') format('truetype'); /* Fallback */
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -359,10 +366,15 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 #fh5co-counter .display-t,
-#fh5co-counter .display-tc,
+#fh5co-counter .display-tc {
+  height: 700px;
+  display: table;
+  width: 100%;
+}
+
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
+  height: 350px;
   display: table;
   width: 100%;
 }
@@ -844,7 +856,7 @@ form label {
   margin-bottom: 0px;
   font-size: 79px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: 'SacramentoUni','Dancing Script',"Sacramento", Arial, serif, cursive;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -999,7 +1011,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1058,6 +1070,7 @@ form label {
 .couple-half {
   width: 50%;
   float: left;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .couple-half {
@@ -1065,10 +1078,18 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "SacramentoUni","Sacramento", Arial, serif;
   color: #F14E95;
-  font-size: 30px;
+  font-size: 60px;
 }
+
+.couple-half .desc-groom-fml h4,
+.couple-half .desc-bride-fml h4 {
+  font-family: "SacramentoUni","Sacramento", Arial, serif;
+  color: #F14E95;
+  font-size: 20px;
+}
+
 .couple-half .groom, .couple-half .bride {
   float: left;
   -webkit-border-radius: 50%;
@@ -1106,11 +1127,22 @@ form label {
   margin-left: 5px;
 }
 .couple-half .desc-groom {
+  padding-top: 55px;
   padding-right: 180px;
   text-align: right;
 }
+
+.couple-half .desc-groom-fml {
+  padding-right: 20px;
+  text-align: right;
+}
 .couple-half .desc-bride {
+  padding-top: 55px;
   padding-left: 180px;
+  text-align: left;
+}
+.couple-half .desc-bride-fml {
+  padding-left: 20px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
@@ -1123,6 +1155,14 @@ form label {
     text-align: center;
   }
   .couple-half .desc-bride {
+    padding-left: 0;
+    text-align: center;
+  }
+  .couple-half .desc-groom-fml {
+    padding-right: 0;
+    text-align: center;
+  }
+  .couple-half .desc-bride-fml {
     padding-left: 0;
     text-align: center;
   }
@@ -1171,7 +1211,7 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
@@ -1182,7 +1222,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "SacramentoUni", "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
