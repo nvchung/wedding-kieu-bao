@@ -2081,5 +2081,33 @@ form label {
   #fh5co-header .display-tc {
     vertical-align: bottom;
   }
+
+  #fh5co-couple {
+    background-image:url(../images/background-1-ver.jpg) !important;
+  }
 }
+
+@media screen and (max-width: 1380px) and (min-width: 769px) {
+  #fh5co-couple {
+    background-image:url(../images/background-1-md.jpg) !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width:481px) {
+  #fh5co-couple {
+    background-image:url(../images/background-1-mdm.jpg) !important;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  #fh5co-couple {
+    background-image:url(../images/background-1-ver.jpg) !important;
+  }
+}
+
+#fh5co-couple {
+  background-image:url(../images/background-1.jpg);
+}
+
 /*# sourceMappingURL=style.css.map */

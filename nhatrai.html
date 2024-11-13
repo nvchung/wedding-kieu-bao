@@ -72,24 +72,22 @@
 		}
 
 
-		// document.addEventListener("DOMContentLoaded", function () {
+		function updateImageSource() {
+        const imgGroom = document.getElementById('groom');
+		const imgBride = document.getElementById('bride');
+        
+        if (window.innerWidth <= 768) {
+            imgGroom.src = 'images/groom_mb.jpg';
+            imgBride.src = 'images/bride_mb.jpg';
+        } else {
+            imgGroom.src = 'images/groom.jpg';
+            imgBride.src = 'images/bride.jpg';
+        }
+    }
 
-		// 	// Function to check if the browser is mobile
-		// 	function isMobile() {
-		// 		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-		// 	}
-
-		// 	if (isMobile()) { // Check if it's not a mobile browser
-		// 		const element = document.querySelector(".simply-seconds-section");
-		// 		if (element) {
-		// 			element.classList.add("d-none");
-		// 			// element.classList.add("position-relative");
-		// 		    element.classList.add("d-md-block");
-					
-		// 		}
-		// 	}
-
-		// });
+    // Call the function on load and when the window is resized
+    window.addEventListener('load', updateImageSource);
+    window.addEventListener('resize', updateImageSource);
 	</script>
 
 
@@ -155,7 +153,7 @@
 			</div>
 		</header>
 
-		<div id="fh5co-couple" class="fh5co-bg" style="background-image:url(images/background-1.jpg);">
+		<div id="fh5co-couple" class="fh5co-bg" style="">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -167,7 +165,7 @@
 				<div class="couple-wrap animate-box p">
 					<div class="couple-half">
 						<div class="groom">
-							<img src="images/groom.jpg" alt="groom" class="img-responsive">
+							<img src="images/groom.jpg" alt="groom" id="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
 							<h3>Ngọc Bảo</h3>
@@ -178,7 +176,7 @@
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
 					<div class="couple-half">
 						<div class="bride">
-							<img src="images/bride.jpg" alt="groom" class="img-responsive">
+							<img src="images/bride.jpg" alt="bride" id="bride" class="img-responsive">
 						</div>
 						<div class="desc-bride">
 							<h3>Diễm Kiều</h3>
@@ -202,7 +200,7 @@
 							<br>Lâm Đồng</p>
 						</div>
 					</div>
-					<p class="heart text-center"><i class="icon-heart"></i></p>
+					<!-- <p class="heart text-center"><i class="icon-heart"></i></p> -->
 					<div class="couple-half">
 						<!-- <div class="bride">
 							<img src="images/bride.jpg" alt="groom" class="img-responsive">
@@ -562,8 +560,8 @@
 						<ul id="fh5co-gallery-list">
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-1.jpg); ">
-								<a href="images/gallery-1.jpg">
+								style="background-image: url(images/gallery/item-1.jpg); ">
+								<a href="images/gallery/item-1.jpg">
 									<div class="case-studies-summary">
 										<!-- <span>14 Photos</span> -->
 										<!-- <h2>Two Glas of Juice</h2> -->
@@ -571,7 +569,7 @@
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-2.jpg); ">
+								style="background-image: url(images/gallery/item-2.jpg); ">
 								<a href="#" class="color-2">
 									<!-- <div class="case-studies-summary">
 										<span>30 Photos</span>
@@ -582,7 +580,7 @@
 
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-3.jpg); ">
+								style="background-image: url(images/gallery/item-3.jpg); ">
 								<a href="#" class="color-3">
 									<!-- <div class="case-studies-summary">
 										<span>90 Photos</span>
@@ -591,7 +589,7 @@
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-4.jpg); ">
+								style="background-image: url(images/gallery/item-4.jpg); ">
 								<a href="#" class="color-4">
 									<!-- <div class="case-studies-summary">
 										<span>12 Photos</span>
@@ -601,7 +599,7 @@
 							</li>
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-5.jpg); ">
+								style="background-image: url(images/gallery/item-5.jpg); ">
 								<a href="#" class="color-3">
 									<!-- <div class="case-studies-summary">
 										<span>50 Photos</span>
@@ -610,7 +608,7 @@
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-6.jpg); ">
+								style="background-image: url(images/gallery/item-6.jpg); ">
 								<a href="#" class="color-4">
 									<!-- <div class="case-studies-summary">
 										<span>45 Photos</span>
@@ -620,7 +618,7 @@
 							</li>
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-7.jpg); ">
+								style="background-image: url(images/gallery/item-7.jpg); ">
 								<a href="#" class="color-4">
 									<!-- <div class="case-studies-summary">
 										<span>35 Photos</span>
@@ -630,7 +628,7 @@
 							</li>
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-8.jpg); ">
+								style="background-image: url(images/gallery/item-8.jpg); ">
 								<a href="#" class="color-5">
 									<!-- <div class="case-studies-summary">
 										<span>90 Photos</span>
@@ -639,7 +637,7 @@
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-9.jpg); ">
+								style="background-image: url(images/gallery/item-9.jpg); ">
 								<a href="#" class="color-6">
 									<!-- <div class="case-studies-summary">
 										<span>56 Photos</span>
