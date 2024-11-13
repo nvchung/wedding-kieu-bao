@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .fh5co-heading span {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
   font-weight: 600;
 }
@@ -1990,5 +1990,22 @@ form label {
   font-family: "font-3", cursive;
 }
 
+.timeline-heading .timeline-title {
+  font-family: Arima, cursive;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
 
+.left-col {
+  border-right: 1px solid #ccc; /* Color and style of the vertical line */
+  padding-right: 20px; /* Adds space between border and content */
+}
+
+@media (max-width: 768px) {
+  .left-col {
+      border-right: none;
+      padding-right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

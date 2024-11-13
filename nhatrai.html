@@ -452,45 +452,77 @@
 					</div>
 				</div> -->
 
-				<div class="row justify-content-center">
+				<div class="row justify-content-center" style="margin-bottom: 30px;">
 					<div class="col-md-9 mx-auto text-center">
-						<div class="event-wrap animate-box">
-							<h3>Trân trọng kính mời</h3>
-							<div class="fh5co-heading"><h2 id="guestName">Bạn</h2></div>
-							<span>Đến dự buổi tiệc chung vui</span>
-							<span>cùng gia đình chúng tôi</span>
-
-							<div class="event-col">
-								<i class="icon-clock"></i><span>17 giờ 30</span>
-								<i class="icon-calendar"></i><span>Thứ 2, 02 thháng 12 2024</span>
-								<span>Nhằm ngày 02 tháng 11 năm Giáp Thìn</span>
+						<div class="event-wrap animate-box arima">
+							<h3 class="arima">Trân trọng kính mời</h3>
+							<div class="fh5co-heading" style="margin-bottom: 0px;">
+								<h2 id="guestName">Bạn</h2>
 							</div>
-
-							<div class="event-col">
-								<i class="icon-calendar"></i>
-								<span>NHÀ HÀNG HỒNG PHÁT </span><span>(Sảnh Vàng Son)</span>
-								<span>Tòa nhà Queen Plaza</span>
-								<span>26 Lý Tự Trọng, Tp. Bảo Lộc, Lâm Đồng</span>
+							<div style="margin-bottom: 5px; font-size: 20px;">
+								<span>Đến dự buổi tiệc chung vui cùng chúng mình</span>
 							</div>
-							<div>
-
-								<span>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi</span>
-								<span>Kính mời</span>
+				
+							<div style="display: flex; align-items: center; gap: 20px;">
+								<div class="event-col arima left-col" >
+									<div style="">
+										<i class="icon-clock" style="margin-right: 5px;"></i>
+										<span> Đón khách: 17 giờ 30</span>
+										<span> Khai tiệc: 18 giờ 00</span>
+									</div>
+									<div style="">
+										<div style="">
+											<i class="icon-calendar" style="margin-right: 5px;"></i>
+											<span>Thứ 2, ngày 02 tháng 12 năm 2024</span>
+											<span>Nhằm ngày 02 tháng 11 năm Giáp Thìn</span>
+										</div>
+										<!-- -->
+									</div>
+				
+								</div>
+				
+								<div class="event-col arima">
+									<i class="icon-calendar"></i>
+									<div class="fh5co-heading" style="margin-bottom: 0px;">
+										<h2 style="color: white; font-size: 36px;">Nhà hàng Hồng Phát</h2>
+									</div>
+									<span>(Sảnh Vàng Son)</span>
+									<span>Tòa nhà Queen Plaza</span>
+									<span>26 Lý Tự Trọng, Tp. Bảo Lộc, Lâm Đồng</span>
+								</div>
 							</div>
-							
+							<div class="arima">
+								<span style="font-size: 20px;">Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng
+									tôi</span>
+								<!-- <br> -->
+								<span class="font-2" style="font-size: 24px;">Kính mời</span>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+				
+				<div class="row justify-content-center">
+					<div class="col-md-6 mx-auto text-center">
+						<div class="event-wrap animate-box arima">
+							<h3 class="arima">Bản đồ</h3>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0551690351977!2d107.8044712407911!3d11.547911895436068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3173f6538b016c25%3A0x65f31873fe8e4e5a!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBIw7TMgG5nIFBoYcyBdCAtIFF1ZWVuIFBhbGFjZQ!5e0!3m2!1sen!2sus!4v1731505713533!5m2!1sen!2sus"
+								width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
 				<script>
 
 					// Check if the "pageTitle" parameter is in the URL
-		const guest = getURLParameter("guestName");
+					const guest = getURLParameter("guestName");
 
-// Change the document title based on the URL parameter
-if (guest) {
-	
-	document.querySelector("#guestName").innerText = guest;
-} 
+					// Change the document title based on the URL parameter
+					if (guest) {
+
+						document.querySelector("#guestName").innerText = guest;
+					} 
 				</script>
 			</div>
 		</div>
