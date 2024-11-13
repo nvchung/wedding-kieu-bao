@@ -72,24 +72,24 @@
 		}
 
 
-		document.addEventListener("DOMContentLoaded", function () {
+		// document.addEventListener("DOMContentLoaded", function () {
 
-			// Function to check if the browser is mobile
-			function isMobile() {
-				return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-			}
+		// 	// Function to check if the browser is mobile
+		// 	function isMobile() {
+		// 		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		// 	}
 
-			if (isMobile()) { // Check if it's not a mobile browser
-				const element = document.querySelector(".simply-seconds-section");
-				if (element) {
-					element.classList.add("d-none");
-					// element.classList.add("position-relative");
-				    element.classList.add("d-md-block");
+		// 	if (isMobile()) { // Check if it's not a mobile browser
+		// 		const element = document.querySelector(".simply-seconds-section");
+		// 		if (element) {
+		// 			element.classList.add("d-none");
+		// 			// element.classList.add("position-relative");
+		// 		    element.classList.add("d-md-block");
 					
-				}
-			}
+		// 		}
+		// 	}
 
-		});
+		// });
 	</script>
 
 
@@ -140,7 +140,7 @@
 			style="" >
 			<div class="overlay"></div>
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
@@ -155,7 +155,7 @@
 			</div>
 		</header>
 
-		<div id="fh5co-couple">
+		<div id="fh5co-couple" class="fh5co-bg" style="background-image:url(images/background-1.jpg);">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -341,7 +341,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-couple-story" style="background-image:url(images/img_bg_3.jpg);">
+		<div id="fh5co-couple-story" class="fh5co-bg" style="background-image:url(images/img_bg_6.jpg);">
 		<!-- <div id="fh5co-couple-story"> -->
 			<div class="container">
 				<div class="row">
@@ -463,26 +463,25 @@
 								<span>Đến dự buổi tiệc chung vui cùng chúng mình</span>
 							</div>
 				
-							<div style="display: flex; align-items: center; gap: 20px;">
+							<div style="display: flex; align-items: center; gap: 20px; font-size: 18px;">
 								<div class="event-col arima left-col" >
 									<div style="">
 										<i class="icon-clock" style="margin-right: 5px;"></i>
 										<span> Đón khách: 17 giờ 30</span>
 										<span> Khai tiệc: 18 giờ 00</span>
 									</div>
-									<div style="">
-										<div style="">
+									<div style="margin-bottom: 5px;">
+										<div>
 											<i class="icon-calendar" style="margin-right: 5px;"></i>
 											<span>Thứ 2, ngày 02 tháng 12 năm 2024</span>
 											<span>Nhằm ngày 02 tháng 11 năm Giáp Thìn</span>
 										</div>
-										<!-- -->
 									</div>
 				
 								</div>
 				
 								<div class="event-col arima">
-									<i class="icon-calendar"></i>
+									<i class="icon-home"></i>
 									<div class="fh5co-heading" style="margin-bottom: 0px;">
 										<h2 style="color: white; font-size: 36px;">Nhà hàng Hồng Phát</h2>
 									</div>
@@ -502,7 +501,7 @@
 					</div>
 				</div>
 				
-				<div class="row justify-content-center">
+				<!-- <div class="row justify-content-center">
 					<div class="col-md-6 mx-auto text-center">
 						<div class="event-wrap animate-box arima">
 							<h3 class="arima">Bản đồ</h3>
@@ -512,7 +511,7 @@
 								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<script>
 
 					// Check if the "pageTitle" parameter is in the URL
@@ -527,6 +526,27 @@
 			</div>
 		</div>
 
+		<div id="fh5co-map" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+			<!-- <div id="fh5co-couple-story"> -->
+				<div class="container" >
+					<div class="row">
+						<div class="row justify-content-center" style="margin:15px 0;">
+							<div class="col-md-6 mx-auto text-center">
+								<div class="event-wrap animate-box arima" >
+									<div>
+										<i class="icon-map" style="margin-bottom: 5px;"></i><h3 class="arima">Bản đồ</h3>
+									</div>
+									
+									<iframe class="responsive-iframe"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0551690351977!2d107.8044712407911!3d11.547911895436068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3173f6538b016c25%3A0x65f31873fe8e4e5a!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBIw7TMgG5nIFBoYcyBdCAtIFF1ZWVuIFBhbGFjZQ!5e0!3m2!1sen!2sus!4v1731505713533!5m2!1sen!2sus"
+										style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		<div id="fh5co-gallery" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">

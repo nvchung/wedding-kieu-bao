@@ -353,6 +353,13 @@ h1, h2, h3, h4, h5, h6, figure {
     background-image:url(../images/img_bg_2_mb.jpg);
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px)  {
+  .fh5co-cover {
+    height: 800px;
+    background-image:url(../images/img_bg_2_md.jpg);
+  }
+}
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   height: 1000px;
@@ -430,11 +437,18 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  #fh5co-event {
+    height: 1030px;
+    padding: 5em 0;
+  }
+}
 @media screen and (max-width: 768px) {
   #fh5co-counter,
   #fh5co-event {
     height: inherit;
-    padding: 7em 0;
+    padding: 5em 0;
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc,
@@ -445,7 +459,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap,
-#fh5co-couple-story .event-wrap {
+#fh5co-couple-story .event-wrap,
+#fh5co-map .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
@@ -459,13 +474,15 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #fh5co-counter .event-wrap,
   #fh5co-event .event-wrap,
-  #fh5co-couple-story .event-wrap {
+  #fh5co-couple-story .event-wrap,
+  #fh5co-map .event-wrap {
     margin-bottom: 10px;
   }
 }
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3,
-#fh5co-couple-story .event-wrap h3 {
+#fh5co-couple-story .event-wrap h3,
+#fh5co-map .event-wrap h3 {
   font-size: 20px;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -478,19 +495,24 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span,
 #fh5co-couple-story .event-wrap p,
-#fh5co-couple-story .event-wrap span {
+#fh5co-couple-story .event-wrap span,
+#fh5co-map .event-wrap p,
+#fh5co-map .event-wrap span
+ {
   display: block;
   color: rgba(255, 255, 255, 0.8);
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i,
-#fh5co-couple-story .event-wrap i {
+#fh5co-couple-story .event-wrap i,
+#fh5co-map .event-wrap i {
   color: white;
   font-size: 20px;
 }
 #fh5co-counter .event-wrap .event-col,
 #fh5co-event .event-wrap .event-col,
-#fh5co-couple-story .event-wrap .event-col {
+#fh5co-couple-story .event-wrap .event-col,
+#fh5co-map .event-wrap .event-col {
   width: 50%;
   float: left;
   margin-bottom: 30px;
@@ -896,18 +918,25 @@ form label {
   line-height: 1.5;
   font-family: 'SacramentoUni','Dancing Script',"Sacramento", Arial, serif, cursive;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 400%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 400%;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 219%;
   }
 }
 #fh5co-counter .display-tc h2,
@@ -2006,6 +2035,51 @@ form label {
   .left-col {
       border-right: none;
       padding-right: 0;
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 35px !important;
+}
+
+.responsive-iframe {
+  width: 100%; /* Full width for responsive behavior */
+  height: 500px; /* Default height for larger screens */
+  max-width: 800px; /* Maximum width to keep iframe within a certain size on large screens */
+}
+
+@media (max-width: 768px) {
+  .responsive-iframe {
+      height: 300px; /* Adjust height for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-iframe {
+      height: 200px; /* Smaller height for very small screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .simply-countdown>.simply-section.simply-seconds-section {
+    display: none;
+  }
+
+  .simply-countdown>.simply-section {
+    width: 88px;
+    height: 88px;
+  }
+
+  .simply-countdown>.simply-section .simply-amount {
+    font-size: 20px;
+  }
+
+  .simply-countdown>.simply-section .simply-word {
+    font-size: 12px;
+  }
+
+  #fh5co-header .display-tc {
+    vertical-align: bottom;
   }
 }
 /*# sourceMappingURL=style.css.map */
