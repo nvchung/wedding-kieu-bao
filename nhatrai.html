@@ -9,20 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Ngọc Bảo ❤ Diễm Kiều Wedding</title>
-	<!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
+	
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="" />
 	<meta property="og:image" content="" />
@@ -79,13 +66,14 @@
 			return urlParams.get(name); // Get the value of the parameter by name
 		}
 
-		// Check if the "pageTitle" parameter is in the URL
-		const nhagai = getURLParameter("nhagai");
+		// // Check if the "pageTitle" parameter is in the URL
+		// const guestName = getURLParameter("guestName");
 
-		// Change the document title based on the URL parameter
-		if (nhagai) {
-			document.title = "Wedding Kieu Diem - Ngoc Bao";
-		} 
+		// // Change the document title based on the URL parameter
+		// if (guestName) {
+			
+		// 	document.querySelector("#guestName").innerText = guestName;
+		// } 
 	</script>
 </head>
 
@@ -449,7 +437,7 @@
 					<div class="col-md-9 mx-auto text-center">
 						<div class="event-wrap animate-box">
 							<h3>Trân trọng kính mời</h3>
-							<h1>&lt;Tên&gt;</h1>
+							<h1 id="guestName">Bạn</h1>
 							<span>Đến dự buổi tiệc chung vui</span>
 							<span>cùng gia đình chúng tôi</span>
 
@@ -460,17 +448,31 @@
 							</div>
 
 							<div class="event-col">
-								<!-- <i class="icon-calendar"></i> -->
+								<i class="icon-calendar"></i>
 								<span>NHÀ HÀNG HỒNG PHÁT </span><span>(Sảnh Vàng Son)</span>
 								<span>Tòa nhà Queen Plaza</span>
 								<span>26 Lý Tự Trọng, Tp. Bảo Lộc, Lâm Đồng</span>
 							</div>
+							<div>
+
+								<span>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi</span>
+								<span>Kính mời</span>
+							</div>
 							
-							<span>Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi</span>
-							<span>Kính mời</span>
 						</div>
 					</div>
 				</div>
+				<script>
+
+					// Check if the "pageTitle" parameter is in the URL
+		const guest = getURLParameter("guestName");
+
+// Change the document title based on the URL parameter
+if (guest) {
+	
+	document.querySelector("#guestName").innerText = guest;
+} 
+				</script>
 			</div>
 		</div>
 
