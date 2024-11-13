@@ -26,6 +26,11 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap&subset=vietnamese" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap&subset=vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&amp;family=Philosopher:wght@400;700&amp;family=Jura:wght@400;700&amp;display=swap" as="style">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+
 
   
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -66,15 +71,28 @@
 			return urlParams.get(name); // Get the value of the parameter by name
 		}
 
-		// // Check if the "pageTitle" parameter is in the URL
-		// const guestName = getURLParameter("guestName");
 
-		// // Change the document title based on the URL parameter
-		// if (guestName) {
-			
-		// 	document.querySelector("#guestName").innerText = guestName;
-		// } 
+		document.addEventListener("DOMContentLoaded", function () {
+
+			// Function to check if the browser is mobile
+			function isMobile() {
+				return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+			}
+
+			if (isMobile()) { // Check if it's not a mobile browser
+				const element = document.querySelector(".simply-seconds-section");
+				if (element) {
+					element.classList.add("d-none");
+					// element.classList.add("position-relative");
+				    element.classList.add("d-md-block");
+					
+				}
+			}
+
+		});
 	</script>
+
+
 </head>
 
 <body>
@@ -127,7 +145,7 @@
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1>Ngọc Bảo &amp; Diễm Kiều</h1>
-								<h2>chúng mình cưới</h2>
+								<h2 class="arima">chúng mình cưới</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
 								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 							</div>
@@ -142,7 +160,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h2>Hello!</h2>
-						<h3>Tháng 12 này tại thành phố Bảo Lộc xinh đẹp</h3>
+						<h3 class="arima">Tháng 12 này tại thành phố Bảo Lộc se lạnh</h3>
 						<p>Chúng mình</p>
 					</div>
 				</div>
@@ -170,18 +188,18 @@
 					</div>
 				</div>
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h3>Cùng với 2 bên gia đình</h3>
+					<h3 class="arima">Cùng với 2 bên gia đình</h3>
 				</div>
 				<div class="couple-wrap animate-box">
 
 					<div class="couple-half">
 						
 						<div class="desc-groom-fml">
-							<p> Họ nhà trai</p>
-							<h4>Ông: NGUYỄN CÔNG VIỆN</h4>
-							<h4>Bà: BÙI THỊ NGA</h4>
+							<p class="arima"> Họ nhà trai</p>
+							<h4 class="arima">Ông: <b>NGUYỄN CÔNG VIỆN</b></h4>
+							<h4 class="arima">Bà: <b>BÙI THỊ NGA</b></h4>
 							<p>Phường 2, TP. Bảo Lộc
-								<br>Lâm Đồng</p>
+							<br>Lâm Đồng</p>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart"></i></p>
@@ -190,9 +208,9 @@
 							<img src="images/bride.jpg" alt="groom" class="img-responsive">
 						</div> -->
 						<div class="desc-bride-fml">
-							<p> Họ nhà gái</p>
-							<h4>Ông: NGUYỄN HÒA THUẬN</h4>
-							<h4>Bà: LÊ THỊ HƠN</h4>
+							<p class="arima"> Họ nhà gái</p>
+							<h4 class="arima">Ông: <b>NGUYỄN HÒA THUẬN</b></h4>
+							<h4 class="arima">Bà: <b>LÊ THỊ HƠN</b></h4>
 							<p>Ấp Xóm Chùa, xã Tân Thông Hội
 							<br>Củ Chi, Tp. Hồ Chí Minh</p>
 						</div>
@@ -324,6 +342,7 @@
 		</div>
 
 		<div id="fh5co-couple-story" style="background-image:url(images/img_bg_3.jpg);">
+		<!-- <div id="fh5co-couple-story"> -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -437,7 +456,7 @@
 					<div class="col-md-9 mx-auto text-center">
 						<div class="event-wrap animate-box">
 							<h3>Trân trọng kính mời</h3>
-							<h1 id="guestName">Bạn</h1>
+							<div class="fh5co-heading"><h2 id="guestName">Bạn</h2></div>
 							<span>Đến dự buổi tiệc chung vui</span>
 							<span>cùng gia đình chúng tôi</span>
 

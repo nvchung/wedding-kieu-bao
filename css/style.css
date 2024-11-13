@@ -12,6 +12,30 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "font-1";
+  src: url("https://w.ladicdn.com/5d9a96b88c0aa631d811d695/svn-marcel-script-pro-20220327151924.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+  @font-face {
+	font-family: "font-2";
+	src: url("https://w.ladicdn.com/5d9a96b88c0aa631d811d695/svn-flamingo-script-20220313163806.otf")
+  }
+  
+  @font-face {
+	font-family: "font-3";
+	src: url("https://w.ladicdn.com/5d9a96b88c0aa631d811d695/9slide05-windsong-20220701032651.ttf") format("truetype");
+  }
+  
+  *,
+  *::before,
+  *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
 /* =======================================================
 *
 * 	Template Style 
@@ -886,10 +910,15 @@ form label {
     font-size: 30px;
   }
 }
-#fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
-.fh5co-cover .display-tc h2 {
+.fh5co-cover .display-tc h2{
   font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#fh5co-header .display-tc h2 {
+  font-size: 30px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -1907,5 +1936,59 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
+
+.arima {
+  font-family: Arima, cursive !important;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.playwrite-de-grund {
+  font-family: "Playwrite DE Grund", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gwendolyn-regular {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gwendolyn-bold {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+#fh5co-couple .arima {
+  font-family: Arima, cursive !important;
+  font-size: 28px;
+  font-weight: 400;
+}
+#fh5co-couple p.arima {
+  font-family: Arima, cursive !important;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.font-1 {
+  font-family: "font-1", cursive;
+}
+
+.font-2 {
+  font-family: "font-2", cursive;
+}
+
+.font-3 {
+  font-family: "font-3", cursive;
+}
+
 
 /*# sourceMappingURL=style.css.map */
