@@ -75,14 +75,18 @@
 		function updateImageSource() {
         const imgGroom = document.getElementById('groom');
 		const imgBride = document.getElementById('bride');
+		const imgFlower = document.getElementById('flower');
         
         if (window.innerWidth <= 768) {
             imgGroom.src = 'images/groom_mb.jpg';
             imgBride.src = 'images/bride_mb.jpg';
+			imgFlower.src = 'images/flower-wreath-1-and.png';
         } else {
             imgGroom.src = 'images/groom.jpg';
             imgBride.src = 'images/bride.jpg';
+			imgFlower.src = 'images/flower-wreath-2-and.png';
         }
+
     }
 
     // Call the function on load and when the window is resized
@@ -104,31 +108,7 @@
 					<div class="col-xs-2">
 						<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
 					</div>
-					<!-- <div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div> -->
+					
 				</div>
 
 			</div>
@@ -139,7 +119,7 @@
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="col-md-8 col-md-offset-1 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1>Ngọc Bảo &amp; Diễm Kiều</h1>
@@ -169,8 +149,7 @@
 						</div>
 						<div class="desc-groom">
 							<h3>Ngọc Bảo</h3>
-							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p> -->
+							
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -180,8 +159,7 @@
 						</div>
 						<div class="desc-bride">
 							<h3>Diễm Kiều</h3>
-							<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p> -->
+						
 						</div>
 					</div>
 				</div>
@@ -199,12 +177,8 @@
 							<p>Phường 2, TP. Bảo Lộc
 							<br>Lâm Đồng</p>
 						</div>
-					</div>
-					<!-- <p class="heart text-center"><i class="icon-heart"></i></p> -->
+					</div>			
 					<div class="couple-half">
-						<!-- <div class="bride">
-							<img src="images/bride.jpg" alt="groom" class="img-responsive">
-						</div> -->
 						<div class="desc-bride-fml">
 							<p class="arima"> Họ nhà gái</p>
 							<h4 class="arima">Ông: <b>NGUYỄN HÒA THUẬN</b></h4>
@@ -217,238 +191,47 @@
 			</div>
 		</div>
 
-		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<span> trân trọng báo tin</span>
-						<h2>Lễ Tân Hôn</h2>
-					</div>
-				</div>
-				<!-- <div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Quý Nam</h3>
-										<div class="" data-animate-effect="fadeIn" >
-											 <img src="images/groom_bt_cr.JPG" style="max-height: 350px; "/> 
-										</div>
-										 <div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Monday 28</span>
-											<span>November, 2016</span>
-										</div> 
-										<br><br>
-										<p style="font-size: 30px;">
-											NGUYỄN CÔNG <br> NGỌC BẢO
-										</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Trưởng Nữ</h3>
-										 <div class="event-col">
-											<div class="" data-animate-effect="fadeIn" style="max-height: 350px; ">
-												 <img src="images/bride_bt_cr.JPG" style="max-height: 350px; "/>
-											</div>
-										<div>
-											 <i class="icon-clock"></i> 
-											<span></span>
-											<span></span>
-											<span></span>
-										</div>
-										 <div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Monday 28</span>
-											<span>November, 2016</span>
-										</div> 
-										<br><br>
-										<p style="font-size: 30px;">
-											NGUYỄN THỊ <br> DIỄM KIỀU
-										</p>
-									</div>
-								</div>
-							</div>
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg)">
+			<div class="containe">
+				<div class="image-div"><img id="flower" class="animate-box" src="images/flower-wreath-2-and.png"></div>
+				<div class="text-div">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<span> trân trọng báo tin</span>
+							<h2>Lễ Tân Hôn</h2>
 						</div>
 					</div>
-				</div> -->
-
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline animate-box">
-							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Quý Nam</h3>
-										<h2>Nguyễn Công Ngọc Bảo</h2>
-									</div>
-									<!-- <div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div> -->
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Trưởng Nữ</h3>
-										<h2>Nguyễn Thị Diễm Kiều</h2>
-									</div>
-									<!-- <div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div> -->
-								</div>
-							</li>
-							<!-- <li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">In A Relationship</h3>
-										<span class="date">January 1, 2016</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div>
-								</div>
-							</li> -->
-						</ul>
+					<div class="row mt-50 mb-50">
+						<div class="col-md-8 col-md-offset-2 fh5co-heading text-center animate-box">
+							<h3 class="timeline-title arima" style="margin-bottom: 0px; font-size:22px;">Quý Nam</h3>
+							<h2 class="dancing-script-reg">Nguyễn Công Ngọc Bảo</h2>
+							<br>
+							<h3 class="timeline-title arima" style="margin-bottom: 0px; font-size:22px;">Trưởng Nữ</h3>
+							<h2 class="dancing-script-reg">Nguyễn Thị Diễm Kiều</h2>
+						</div>
 					</div>
-					</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<span>Hôn lễ được cử hành tại:</span>
-						
-						<h2>Tư gia nhà trai</h2>
-						<span>Vào lúc: 11 giờ - 02/12/2024</span><br>
-						<span>(Nhằm ngày 02 tháng 11 năm Giáp Thìn)</span>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<span>Hôn lễ được cử hành tại:</span>
+		
+							<h2>Tư gia nhà trai</h2>
+							<span>Vào lúc: 11 giờ - 02/12/2024</span><br>
+							<span>(Nhằm ngày 02 tháng 11 năm Giáp Thìn)</span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div id="fh5co-couple-story" class="fh5co-bg" style="background-image:url(images/img_bg_6.jpg);">
-		<!-- <div id="fh5co-couple-story"> -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>We Love Each Other</span>
 						<h2>Thiệp mời</h2>
-						<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p> -->
 					</div>
 				</div>
-				<!-- <div class="row">
-					<div class="col-md-12 col-md-offset-0">
-						<ul class="timeline animate-box">
-							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Đón khách</h3>
-										<span class="date">17:30</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="timeline-inverted animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">Nhập tiệc</h3>
-										<span class="date">18:00</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div>
-								</div>
-							</li>
-							<li class="animate-box">
-								<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-										<h3 class="timeline-title">In A Relationship</h3>
-										<span class="date">January 1, 2016</span>
-									</div>
-									<div class="timeline-body">
-										<p>Far far away, behind the word mountains, far from the countries Vokalia and
-											Consonantia, there live the blind texts. Separated they live in
-											Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-										</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div> -->
-
-				<!-- <div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10">
-								<div class="col-md-10 col-sm-10 mx-auto text-center">
-									<div class="event-wrap animate-box">
-										<h3>Quý Nam</h3>
-										
-										 <div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Monday 28</span>
-											<span>November, 2016</span>
-										</div> 
-										<br><br>
-										<p style="font-size: 30px;">
-											NGUYỄN CÔNG <br> NGỌC BẢO
-										</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>Trưởng Nữ</h3>
-										 <div class="event-col">
-											<div class="" data-animate-effect="fadeIn" style="max-height: 350px; ">
-												 <img src="images/bride_bt_cr.JPG" style="max-height: 350px; "/>
-											</div>
-										<div>
-											 <i class="icon-clock"></i> 
-											<span></span>
-											<span></span>
-											<span></span>
-										</div>
-										 <div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>Monday 28</span>
-											<span>November, 2016</span>
-										</div> 
-										<br><br>
-										<p style="font-size: 30px;">
-											NGUYỄN THỊ <br> DIỄM KIỀU
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
+				
 
 				<div class="row justify-content-center" style="margin-bottom: 30px;">
 					<div class="col-md-9 mx-auto text-center">
@@ -489,27 +272,17 @@
 								</div>
 							</div>
 							<div class="arima">
-								<span style="font-size: 20px;">Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng
+								<span style="font-size: 20px;">Sự hiện diện của <p id="guestName2" style="display: inline; margin: 0;">quý khách</p> là niềm vinh hạnh cho gia đình chúng
 									tôi</span>
 								<!-- <br> -->
-								<span class="font-2" style="font-size: 24px;">Kính mời</span>
+								<span class="dancing-script-reg" style="font-size: 40px;">Kính mời</span>
 							</div>
 				
 						</div>
 					</div>
 				</div>
 				
-				<!-- <div class="row justify-content-center">
-					<div class="col-md-6 mx-auto text-center">
-						<div class="event-wrap animate-box arima">
-							<h3 class="arima">Bản đồ</h3>
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0551690351977!2d107.8044712407911!3d11.547911895436068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3173f6538b016c25%3A0x65f31873fe8e4e5a!2zTmjDoCBIw6BuZyBUaeG7h2MgQ8aw4bubaSBIw7TMgG5nIFBoYcyBdCAtIFF1ZWVuIFBhbGFjZQ!5e0!3m2!1sen!2sus!4v1731505713533!5m2!1sen!2sus"
-								width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-					</div>
-				</div> -->
+				
 				<script>
 
 					// Check if the "pageTitle" parameter is in the URL
@@ -519,6 +292,7 @@
 					if (guest) {
 
 						document.querySelector("#guestName").innerText = guest;
+						document.querySelector("#guestName2").innerText = guest;
 					} 
 				</script>
 			</div>
@@ -541,8 +315,6 @@
 								style="background-image: url(images/item-1.jpg); ">
 								<a href="images/gallery/item-1.jpg">
 									<div class="case-studies-summary">
-										<!-- <span>14 Photos</span> -->
-										<!-- <h2>Two Glas of Juice</h2> -->
 									</div>
 								</a>
 							</li>
@@ -629,186 +401,8 @@
 			</div>
 		</div>
 
-		<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="feature-center">
-									<span class="icon">
-										<i class="icon-users"></i>
-									</span>
-
-									<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000"
-										data-refresh-interval="50">1</span>
-									<span class="counter-label">Estimated Guest</span>
-
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="feature-center">
-									<span class="icon">
-										<i class="icon-user"></i>
-									</span>
-
-									<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000"
-										data-refresh-interval="50">1</span>
-									<span class="counter-label">We Catter</span>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="feature-center">
-									<span class="icon">
-										<i class="icon-calendar"></i>
-									</span>
-									<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000"
-										data-refresh-interval="50">1</span>
-									<span class="counter-label">Events Done</span>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 animate-box">
-								<div class="feature-center">
-									<span class="icon">
-										<i class="icon-clock"></i>
-									</span>
-
-									<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000"
-										data-refresh-interval="50">1</span>
-									<span class="counter-label">Hours Spent</span>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- <div id="fh5co-testimonial">
-			<div class="container">
-				<div class="row">
-					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<span>Best Wishes</span>
-							<h2>Friends Wishes</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<div class="wrap-testimony">
-								<div class="owl-carousel-fullwidth">
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-1.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries
-													Vokalia and Consonantia, there live the blind texts. Separated they
-													live in Bookmarksgrove right at the coast of the Semantics"</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-2.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries
-													Vokalia and Consonantia, at the coast of the Semantics, a large
-													language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-3.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, far from the countries Vokalia and Consonantia, there
-													live the blind texts. Separated they live in Bookmarksgrove right at
-													the coast of the Semantics, a large language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!--
-		<div id="fh5co-services" class="fh5co-section-gray">
-			<div class="container">
-
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>We Offer Services</h2>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-							provident. Odit ab aliquam dolor eius.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-calendar"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>We Organized Events</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-image"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Photoshoot</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
-						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-							<span class="icon">
-								<i class="icon-video"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Video Editing</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-									cumque dicta adipisci architecto culpa amet.</p>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col-md-6 animate-box">
-						<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-							<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i
-									class="icon-video2"></i></a>
-							<div class="overlay"></div>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-		</div> -->
-
-
-		<div id="fh5co-map" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		
+		<div id="fh5co-map" class="fh5co-bg">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row animate-box">
