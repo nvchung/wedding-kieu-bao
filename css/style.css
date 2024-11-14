@@ -619,15 +619,15 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: -80px;
   background-color: #999999;
   z-index: 100;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-left: -20px !important;
   }
 }
@@ -1082,6 +1082,7 @@ form label {
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
+#fh5co-map,
 .fh5co-section {
   padding: 5em 0;
   clear: both;
@@ -1095,6 +1096,7 @@ form label {
   #fh5co-couple-story,
   #fh5co-couple,
   #fh5co-gallery,
+  #fh5co-map,
   .fh5co-section {
     padding: 3em 0;
   }
@@ -1456,7 +1458,12 @@ form label {
 #fh5co-started {
   position: relative;
 }
-#fh5co-started .overlay {
+
+#fh5co-map {
+  position: relative;
+}
+#fh5co-started .overlay,
+#fh5co-map .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1464,13 +1471,16 @@ form label {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-#fh5co-started .fh5co-heading h2 {
+#fh5co-started .fh5co-heading h2 ,
+  #fh5co-map .fh5co-heading h2 {
   color: #fff;
 }
-#fh5co-started .fh5co-heading p {
+#fh5co-started .fh5co-heading p ,
+  #fh5co-map .fh5co-heading p {
   color: rgba(255, 255, 255, 0.5);
 }
-#fh5co-started .form-control {
+#fh5co-started .form-control ,
+  #fh5co-map.form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
   color: #fff;
@@ -1515,10 +1525,12 @@ form label {
 #fh5co-started .form-inline .form-group .form-control {
   width: 100%;
 }
-#fh5co-started .fh5co-heading {
+#fh5co-started .fh5co-heading,
+  #fh5co-map .fh5co-heading {
   margin-bottom: 30px;
 }
-#fh5co-started .fh5co-heading h2 {
+#fh5co-started .fh5co-heading h2,
+  #fh5co-map .fh5co-heading h2 {
   margin-bottom: 0;
 }
 
@@ -2108,6 +2120,22 @@ form label {
 
 #fh5co-couple {
   background-image:url(../images/background-1.jpg);
+}
+
+
+
+.dancing-script-reg {
+  font-family: "Dancing Script", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-semibold {
+  font-family: "Dancing Script", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
