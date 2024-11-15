@@ -2264,4 +2264,20 @@ form label {
     font-size: 30px;
   }
 }
+
+#fh5co-couple-story .fh5co-heading h2 {
+  background: -webkit-linear-gradient(226deg, #e7c6c4 0%, rgba(213,236,229,0.8) 4.59%, transparent 47.265%, rgba(203,226,235,0.62) 91.617%, rgba(181,229,219,0.75) 100%),
+            -webkit-linear-gradient(291deg, #aae7cc 0%, #dcc7e7 23.626%, #f1dadf 73.008%, #d3e3e9 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#fh5co-event .fh5co-heading h2.dancing-script-reg {
+
+background: -webkit-linear-gradient(226deg, #e7c6c4 0%, rgba(213,236,229,0.8) 4.59%, transparent 47.265%, rgba(203,226,235,0.62) 91.617%, rgba(181,229,219,0.75) 100%),
+-webkit-linear-gradient(291deg, #aae7cc 0%, #dcc7e7 23.626%, #f1dadf 73.008%, #d3e3e9 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
 /*# sourceMappingURL=style.css.map */
