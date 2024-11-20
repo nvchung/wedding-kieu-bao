@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover.ng {
-  background-image:url(../images/img_bg_2-ng.jpg) !important;
+  background-image:url(../images/img_bg_2.jpg) !important;
 }
 
 .fh5co-cover .overlay {
@@ -1176,7 +1176,7 @@ form label {
 .heart i {
   font-size: 20px;
   background: #fff;
-  padding: 20px;
+  padding: 23px;
   color: #ff7096;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
